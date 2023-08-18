@@ -1,0 +1,28 @@
+GET http://localhost:5000/books
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5ndXllbiBNYW5oIEh1bmciLCJpYXQiOjE2ODkyMjMyODAsImV4cCI6MTY4OTIyMzMxMH0.DXszcsf2Y-WxUMLkj0E9zNWU4YjHG6HTgxwLvMzwzIo
+###
+
+POST http://localhost:5500/login
+Content-Type: application/json
+
+{
+    "username": "Nguyen Manh Hung"
+}
+
+###
+
+POST http://localhost:5500/refreshToken
+Content-Type: application/json
+
+{
+    "token":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5ndXllbiBNYW5oIEh1bmciLCJpYXQiOjE2ODkyMjMyMTZ9.GZ5JoU_6pEEHWZFU7u2mo81HdoFJrFWtFNHAWjzFmUs"
+}
+
+###
+
+POST http://localhost:5500/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik5ndXllbiBNYW5oIEh1bmciLCJpYXQiOjE2ODkyMjMyODAsImV4cCI6MTY4OTIyMzMxMH0.DXszcsf2Y-WxUMLkj0E9zNWU4YjHG6HTgxwLvMzwzIo"
+}
